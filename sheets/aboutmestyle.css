@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #0aff8c;
+    --cor-quarternaria: #00ff8877;
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(6, 23, 24);
+    color: #f6f6f6;
+    background-image: url(../assets/codecode.jpg);
+    background-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+
+}
+
+.cabecalho__menu {
+     display:flex;
+     gap:80px;
+
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    flex: 1;
+    padding: 5.3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentacao__conteudo {
+    width:50%;
+    gap:40px;
+    display: flex;
+    flex-direction: column ;
+}
+
+.apresentacao__titulo {
+    font-size: 2.25rem;
+    font-family:var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    text-shadow: 0 0 20px var(--cor-terciaria) ;
+}
+
+.apresentacao__paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+}
+
+.apresentacao__paragrafo__destaque {
+    color:var(--cor-terciaria);
+    text-shadow: 0 0 7px var(--cor-terciaria) ;
+}
+
+.imagemMelhor {
+    width: 50%;
+    filter: grayscale(40%);
+    transition: 1.5s ease;
+    object-fit: contain;
+}
+
+.imagemMelhor:Hover{
+    filter: grayscale(100%);
+}
+
+.apresentacao__conteudo__cursos {
+    font-family:'Krona One', sans-serif;
+    font-size:2.25rem;
+    font-weight:400;
+    text-shadow: 0 0 20px var(--cor-terciaria);
+
+}
+
+.apresentacao__conteudo__cursos__links { 
+    font-family:var(--fonte-secundaria);
+    font-weight:600px;
+    font-size:1.12rem;
+    color:#f6f6f6;
+    text-decoration:none;
+}
+
+.rodape {
+    background-color:var(--cor-terciaria);
+    padding:15px;
+    text-align: center;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.12rem; 
+
+}
+
+@media (max-width: 1200px){
+    .apresentacao {
+         flex-direction: column-reverse ; 
+    }
+
+
+}
